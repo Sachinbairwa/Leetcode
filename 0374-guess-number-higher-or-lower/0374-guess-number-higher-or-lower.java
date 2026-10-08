@@ -16,11 +16,11 @@ public class Solution extends GuessGame {
 
         while(low <= high){
             int mid = low +(high-low)/2;
-            int pick = guess(mid);
+            int result = guess(mid);
 
-            if(pick == 0){
+            if(result == 0){
                 return mid;
-            }else if(pick<0){
+            }else if(result<0){
                 high = mid -1;
             }else{
                 low = mid + 1;
