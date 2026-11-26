@@ -4,7 +4,7 @@ class Solution {
         int low = 1;
         int high  = 0;
 
-
+//for high we have to put an enhanced for loop 
         for (int pile : piles) {
             high = Math.max(high, pile);
         }
